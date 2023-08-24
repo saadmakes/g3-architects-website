@@ -113,10 +113,58 @@ main {
     font-weight: 700;
 }
 
+/* features section styles */
+.features {
+    margin: 130px 0;
+    display: flex;
+    gap: 100px;
+}
+
+.features .title {
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+
+.feature-content .card {
+    margin: 20px 0;
+    padding: 30px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+
+.feature-img img {
+    height: 90%;
+    margin-left: 70px;
+}
+
+.experience-badge {
+    border-radius: 8px;
+    background: #FF900E;
+    color: #FFF;
+    width: 340px;
+    padding: 40px;
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+}
+
+.experience-badge h1 {
+    margin: 0;
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.experience-badge p {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
 /* facts section styles */
 .facts-card-container {
     display: flex;
     justify-content: space-around;
+    margin-top: 100px;
 }
 
 .facts-card-container .card {
@@ -142,6 +190,7 @@ main {
 /* sponsors section styles */
 .sponsors {
     text-align: center;
+    margin: 130px 0;
 }
 
 .sponsors-img-container {
@@ -150,6 +199,18 @@ main {
     justify-content: space-evenly;
     align-items: center;
     gap: 20px;
+}
+
+/* footer */
+footer {
+    max-width: 1440px;
+    margin: 200px auto;
+    padding: 20px;
+    border-radius: 8px;
+    background: #FFF4E7;
+    color: #424242;
+    text-align: center;
+    font-weight: 400;
 }
 
 /* responsive media queries */
@@ -161,9 +222,28 @@ main {
 
     nav,
     .teams-container,
+    .features,
     .facts-card-container,
     .sponsors-img-container {
         flex-direction: column;
+    }
+
+    .feature-img img {
+        width: 80%;
+    }
+
+    .experience-badge {
+        width: 40%;
+        padding: 15px;
+        bottom: 50px;
+    }
+
+    .experience-badge h1 {
+        font-size: 2rem;
+    }
+
+    .experience-badge p {
+        font-size: 0.75rem;
     }
 
     .teams-img-container {
@@ -189,8 +269,28 @@ main {
 
     nav,
     .teams-container,
+    .features,
+    .facts-card-container,
     .sponsors-img-container {
         flex-direction: column;
+    }
+
+    .feature-img img {
+        width: 80%;
+    }
+
+    .experience-badge {
+        width: 40%;
+        padding: 15px;
+        bottom: 50px;
+    }
+
+    .experience-badge h1 {
+        font-size: 2rem;
+    }
+
+    .experience-badge p {
+        font-size: 0.75rem;
     }
 
     .teams-content,
