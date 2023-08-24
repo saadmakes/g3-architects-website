@@ -1,10 +1,14 @@
 /* work sans font from google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap');
 
+/* shared styles */
 * {
     font-family: 'Work Sans', sans-serif;
 }
 
+.text-light-gray {
+    color: #727272;
+}
 
 /* header styles */
 header {
@@ -76,7 +80,7 @@ nav li a {
 /* main styles */
 main {
     max-width: 1440px;
-    margin: 0 auto;
+    margin: 70px auto;
 }
 
 /* teams styles */
@@ -101,7 +105,6 @@ main {
 }
 
 .teams-title .quick-list {
-    color: #727272;
     font-weight: 500;
 }
 
@@ -111,13 +114,23 @@ main {
 }
 
 /* responsive media queries */
+/* small devices */
 @media screen and (max-width:576px) {
     header {
         padding: 20px;
     }
 
-    nav {
+    nav,
+    .teams-container {
         flex-direction: column;
+    }
+
+    .teams-img-container {
+        grid-template-columns: 1fr;
+    }
+
+    .teams-content {
+        padding: 0 25px;
     }
 }
 
@@ -127,7 +140,12 @@ main {
         padding: 50px;
     }
 
-    nav {
+    nav,
+    .teams-container {
         flex-direction: column;
+    }
+
+    .teams-content {
+        padding: 0 80px;
     }
 }
